@@ -294,7 +294,7 @@ main section:nth-child(2n){
     background-color:rgb(253, 120, 71);
     margin: 40px 25px 40px 25px;
     border-radius: 20px;
-    transition: ease-in-out 1sec;
+    transition: 0.5s ease-in-out;
 }
 .portfolio-struct:hover{
     height: 220px;
@@ -306,7 +306,7 @@ main section:nth-child(2n){
     height: inherit;
     width: inherit;
     border-radius: 20px;
-    transition: cubic-bezier(0.22, 0.61, 0.36, 1) 5sec;
+    transition: ease-in-out;
 }
 .portfolio-struct img:hover{
     height: inherit;
