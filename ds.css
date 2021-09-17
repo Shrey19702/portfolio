@@ -16,7 +16,7 @@ body{
 .topic-heading{
     text-align: center;
     font-size: 3rem;
-    font-family: system-ui;
+    font-family:'system-ui';
     margin-bottom: 5vh;
     margin-top: 3vh;
 }
@@ -291,7 +291,6 @@ main section:nth-child(2n){
 .portfolio-struct{
     height: 200px;
     width: 200px;
-    background-color:rgb(253, 120, 71);
     margin: 40px 25px 40px 25px;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
@@ -300,13 +299,12 @@ main section:nth-child(2n){
     height: 220px;
     width: 220px;
     margin: 30px 15px 30px 15px ;
-    background-color:rgb(253, 120, 71);
 }
 .portfolio-struct img{
     height: inherit;
     width: inherit;
     border-radius: 20px;
-    transition: ease-in-out;
+    transition: ease-in-out ;
 }
 .portfolio-struct img:hover{
     height: inherit;
