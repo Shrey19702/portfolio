@@ -215,7 +215,7 @@ main section:nth-child(2n){
     position:absolute;
     height: 70%;
     width: 0;
-    border: 2px dashed rgb(181, 186, 197);
+    border: 3px dashed rgb(181, 186, 197);
     top: 5%;
     left: 50%;
 }
@@ -274,7 +274,7 @@ main section:nth-child(2n){
     position:absolute;
     height: 70%;
     width: 0;
-    border: 2px dashed rgb(181, 186, 197);
+    border: 3px dashed rgb(181, 186, 197);
     top: 5%;
     left: 50%;
 }
