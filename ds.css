@@ -16,7 +16,7 @@ body{
 .topic-heading{
     text-align: center;
     font-size: 3rem;
-    font-family:'Times New Roman', Times, serif;
+    font-family: system-ui;
     margin-bottom: 5vh;
     margin-top: 3vh;
 }
