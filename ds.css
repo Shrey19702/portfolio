@@ -187,73 +187,20 @@ main section:nth-child(2n){
 }
 /*............SKILLS-END.............*/
 
-/*............EXPERIENCE.............*/
+/*............EXPERIENCE + EDUCATION (COMBINED).............*/
 #experience{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#experience-box{
-    position:relative;
-    width: 75%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.experience-content{
-    margin: 10px;
-    height: 20%;
-    width: 40%;
-}
-.experience-content:nth-child(2n) {
-    position :relative;
-    left: 55%;
-}
-#road{
-    position:absolute;
-    height: 70%;
-    width: 0;
-    border: 3px dashed rgb(181, 186, 197);
-    top: 5%;
-    left: 50%;
-}
-#experience-man{
-   position: sticky;
-   top: 25%;
-   font-size: 2rem;
-   margin-left: -0.37rem;
-   margin-top: -10px;
-   z-index: 1;
-}
-.loc{
-    position: absolute;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    margin-left:-0.5rem;
-    border: 2px solidtomato;
-    background-color: #2d69dd;
-}
-#loc-2{
-    top: 45%;
-}
-#loc-3{
-    top: 80%;
-}
-
-/*.............EXPERIENCE-END..........*/
-
-/*..............EDUCATION............*/
-
 #education{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#education-box{
+.exp-box{
     position:relative;
     width: 75%;
     height: 400px;
@@ -261,30 +208,22 @@ main section:nth-child(2n){
     flex-direction: column;
     flex-wrap: wrap;
 }
-.education-content{
+.exp-content{
     margin: 10px;
     height: 20%;
     width: 40%;
 }
-.education-content:nth-child(2n) {
+.exp-content:nth-child(2n) {
     position :relative;
     left: 55%;
 }
-#road{
+.road{
     position:absolute;
     height: 70%;
     width: 0;
-    border: 3px dashed rgb(181, 186, 197);
+    border: 2px dashed rgb(181, 186, 197);
     top: 5%;
     left: 50%;
-}
-#education-man{
-   position: sticky;
-   top: 35%;
-   font-size: 2rem;
-   margin-left: -1rem;
-   margin-top: -10px;
-   z-index: 1;
 }
 .loc{
     position: absolute;
@@ -295,15 +234,48 @@ main section:nth-child(2n){
     border: 2px solidtomato;
     background-color: #2d69dd;
 }
-#loc-2{
+.loc-2{
     top: 45%;
 }
-#loc-3{
+.loc-3{
     top: 80%;
 }
+#experience-man{
+    position: sticky;
+    top: 25%;
+    font-size: 2rem;
+    margin-left: -0.37rem;
+    margin-top: -10px;
+    z-index: 1;
+}
+#education-book{
+    position: sticky;
+    top: 35%;
+    font-size: 2rem;
+    margin-left: -1rem;
+    margin-top: -10px;
+    z-index: 1;
+} 
+@media screen and (max-width:600px) {
+    .road{
+        left: 5%;
+    }
+    .exp-content{
+        margin-bottom: 10%;
+        height: 20%;
+        width: 90%;
+    }
+    .exp-content:nth-child(2n+1){
+        position :relative;
+        left: 20%;
+    }
+    .exp-content:nth-child(2n){
+        position :relative;
+        left: 20%;
+    }
+}
 
-
-/*...............EDUCATION-END............*/
+/*...............EXPERIENCE+EDUCATION-END............*/
 
 /*............PORTFOLIO...............*/
 #portfolio{
