@@ -1,0 +1,451 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/*.......give margin to center the text (space on sides).....*/
+.center-margined{
+    padding: 0px 20%;
+    text-align: center;
+    margin-bottom: 2rem;
+} 
+/*................TOPIC HEADINGS...............*/
+.topic-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'system-ui';
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+}
+
+.writing-1{
+    /* font-size: 2rem; */
+    font-weight: 300;
+    font-family: system-ui;
+    color: #222222;
+}
+.writing-2{
+    color: #f4863c;
+    font-family: 'Times New Roman', serif;
+}
+.writing-3{
+    color: rgb(19, 4, 43);
+}
+.writing-4{
+    color: #d1cf69;
+    font-family: 'Times New Roman', serif;    
+}
+.body-header h1{
+    color:floralwhite;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-top: 10vh;    
+}
+.heading-white-small{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+/*.........MAIN........*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section:nth-child(2n+1){
+    background-color: rgb(247 247 247);
+}
+main section:nth-child(2n){
+    background-color: #e5eaec;
+}
+/* Horizontally listed links - flex, link decoration, hovering */
+.horiz-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(210, 235, 235);
+}
+.horiz-list a{
+    color: rgb(210, 235, 235);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.horiz-list a:hover{
+    color:floralwhite;
+    transition: 0.3s ease-in;
+}
+/*..........END.............*/
+
+/*.........navbar...........*/
+.navbar{
+    justify-content: center;    
+}
+.navbar li{
+    margin: 5vh 2.5vw;
+}
+
+/*.........social.........*/
+.social-links{
+    justify-content: center;
+}
+.social-links li{
+    margin: 5vw 4vh;
+}
+.social-links li a i{
+    font-size: 2rem;
+    height: 0px;
+    border-radius: 50%;
+}
+.social-links li a i:hover{
+    box-shadow: 0px 0px 50px 10px rgba(203, 240, 241, 0.623) ;
+    transition: 0.4s ease-in-out ;
+}
+/* ............background........... */
+.body-header{
+    height: 65vh;
+    width: 100%;
+    background-image: url(./images/lake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*......................HEADER END......................*/
+
+/*........................HOME PAGE----image + text(about)........*/
+#img-container{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+}
+.profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -12vh;
+    border: 3px solid rgb(139 180 202); 
+    box-shadow: 0px 0px 50px 5px rgb(4 37 56);
+}
+#home-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*......................HOME PAGE END....................*/
+
+/* ....................SKILLS...............*/
+#skills{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#skill-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill-bar{
+    height: 35px;
+    width: 210px;
+    margin: 30px;
+    background-color: rgb(229 234 236);
+    border-radius: 20px;
+    border: 4px solid rgb(206, 206, 231);
+}
+.skill-per{
+    border-radius: 15px 4px 4px 15px;
+    height: inherit;
+}
+.skill-per>span{
+    font-size: 1.15rem;
+    display: block;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+/*.......percentage......*/
+.per60{
+    width: 60%;
+    background-color:rgb(253, 120, 71) ;
+}
+.per70{
+    width: 70%;
+    background-color: #ffdd36;
+}
+.per85{
+    width: 85%;
+    background-color:#4fdd1b;
+}
+.per80{
+    background:#14def8;
+    width: 80%;
+}
+/*............SKILLS-END.............*/
+
+/*............EXPERIENCE + EDUCATION (COMBINED).............*/
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exp-box{
+    position:relative;
+    width: 75%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.exp-content{
+    margin: 10px;
+    height: 20%;
+    width: 40%;
+}
+.exp-content:nth-child(2n) {
+    position :relative;
+    left: 55%;
+}
+.road{
+    position:absolute;
+    height: 70%;
+    width: 0;
+    border: 2px dashed rgb(181, 186, 197);
+    top: 5%;
+    left: 50%;
+}
+.loc{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-left:-0.5rem;
+    border: 2px solidtomato;
+    background-color: #2d69dd;
+}
+.loc-2{
+    top: 45%;
+}
+.loc-3{
+    top: 80%;
+}
+#experience-man{
+    position: sticky;
+    top: 25%;
+    font-size: 2rem;
+    margin-left: -0.37rem;
+    margin-top: -10px;
+    z-index: 1;
+}
+#education-book{
+    position: sticky;
+    top: 35%;
+    font-size: 2rem;
+    margin-left: -1rem;
+    margin-top: -10px;
+    z-index: 1;
+} 
+@media screen and (max-width:600px) {
+    .road{
+        left: 5%;
+    }
+    .exp-content{
+        margin-bottom: 10%;
+        height: 20%;
+        width: 90%;
+    }
+    .exp-content:nth-child(2n+1){
+        position :relative;
+        left: 20%;
+    }
+    .exp-content:nth-child(2n){
+        position :relative;
+        left: 20%;
+    }
+}
+
+/*...............EXPERIENCE+EDUCATION-END............*/
+
+/*............PORTFOLIO...............*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.portfolio-struct{
+    height: 200px;
+    width: 200px;
+    margin: 40px 25px 40px 25px;
+    border-radius: 11px;
+    transition: 0.2s ease-in-out;
+}
+.portfolio-struct:hover{
+    /* color: blanchedalmond; */
+    /* background-image: rgb(0,0,0, 0.5) ; */
+    height: 220px;
+    width: 220px;
+    margin: 30px 15px 30px 15px ;
+}
+.portfolio-struct img{
+    height: inherit;
+    width: inherit;
+    border-radius: 11px;
+    transition: ease-in-out ;
+}
+
+.portfolio-struct img:hover{
+    /* background-image: ; */
+    height: inherit;
+    width: inherit;
+}
+/*................PORTFOLIO-END...........*/
+
+/*................CONTACT................*/
+#contact{
+    color: rgb(210, 235, 235);
+    background-image: linear-gradient(32deg, rgb(58, 114, 204), rgb(32, 11, 87));
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+#contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact>h1{
+    margin-top: 25px;
+    color: rgb(210, 235, 235);
+}
+#contact-box-1{
+    margin: 3rem;
+    width: 70%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+#name{
+    width: 60%;
+    color: rgb(210 235 235);
+    background-color: rgba(0,0,0,0);
+    height: 3rem;
+    border-width: 0px 0px 2px 0px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+}
+#Email{
+    width: 60%;
+    color: rgb(210 235 235);
+    background-color: rgba(0,0,0,0);
+    height: 3rem;
+    border-width: 0px 0px 2px 0px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+
+}
+#message{
+    width: 60%;
+    color: rgb(210 235 235);
+    background-color: rgba(0,0,0,0);
+    height: 3rem;
+    border-width: 0px 0px 2px 0px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+}
+#submit{
+    width: 60%;
+    color: rgb(210 235 235);
+    background-color: rgba(0,0,0,0);
+    border-width: 0px 0px 0px 0px;
+    border-style: inset;
+    border-color: black;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#submit:hover{
+    font-size: 16px;
+    margin-bottom: 18.08px;
+}
+#contact-box-2{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+#contact-box-2-1{
+    width: 80%;
+    height: 26%;
+    margin: 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+
+}
+#contact-box-2-2{
+    
+    width: 80%;
+    height: 30%;
+    margin: 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.personal-details{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-evenly;
+}
+.personal-details p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+#email{
+    text-decoration: none;
+    color: rgb(210, 235, 235);
+}
+/*................CONTACT-END............*/
+
+/*.............BACK to HOME.............*/
+#back-to-home{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(170, 172, 204, 0.432);
+    border-radius: 50%;
+    text-align:center;
+    text-decoration: none;
+    font-size: 1.7rem;
+    position: fixed;
+    top: 87%;
+    left: 93%;
+}
+#back-to-home a{
+    color: rgb(117, 131, 214);
+}
+/*..............BACK to HOME-END..............*/
+
+
